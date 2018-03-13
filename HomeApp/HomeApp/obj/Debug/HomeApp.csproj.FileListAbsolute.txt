@@ -1,0 +1,17 @@
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\bin\Debug\HomeApp.exe.config
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\bin\Debug\HomeApp.exe
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\bin\Debug\HomeApp.pdb
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\HomeApp.csprojResolveAssemblyReference.cache
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\MainWindow.g.cs
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\App.g.cs
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\HomeApp_MarkupCompile.cache
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\HomeApp_MarkupCompile.lref
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\MainWindow.baml
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\HomeApp.g.resources
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\HomeApp.Properties.Resources.resources
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\HomeApp.csproj.GenerateResource.cache
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\HomeApp.csproj.CoreCompileInputs.cache
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\HomeApp.exe
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\HomeApp.pdb
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\HomePage.g.cs
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\HomePage.baml
