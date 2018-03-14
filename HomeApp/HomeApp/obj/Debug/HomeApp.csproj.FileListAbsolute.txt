@@ -32,3 +32,7 @@ C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\HomeApp.csproj.
 C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\HomeApp.csproj.CoreCompileInputs.cache
 C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\HomeApp.exe
 C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\HomeApp.pdb
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\Settings.g.cs
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\Settings.baml
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\Licence.g.cs
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\Licence.baml

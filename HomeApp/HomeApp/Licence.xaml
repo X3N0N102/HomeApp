@@ -1,0 +1,10 @@
+﻿<Window x:Class="HomeApp.Licence"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HomeApp"
+        mc:Ignorable="d"
+        Title="Licence" Height="450" Width="421.831" Background="#FF212121">
+    <Label x:Name="label" Content="Refrigerator by Dara Ullrich from the Noun Project&#xA;&#xA;Refrigerator by Fabien Jouin from the Noun Project&#xA;    &#xA;House by James Zamyslianskyj from the Noun Project&#xA;    &#xA;Cabinet by Sergey Patutin from the Noun Project&#xA;    &#xA;Settings by  Green from the Noun Project&#xA;    &#xA;ini by AlfredoCreates.com/Icons from the Noun Project" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="401" Width="402" Foreground="#FFE68A00"/>
+</Window>

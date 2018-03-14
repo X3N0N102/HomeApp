@@ -25,10 +25,61 @@ namespace HomeApp
             InitializeComponent();
         }
 
-        private void Click(object sender, MouseButtonEventArgs e)
+        private void HomeButton(object sender, MouseButtonEventArgs e)
         {
-            HomePage HomePage = new HomePage();
-            HomePage.Show();
+            HomePage homePage = new HomePage();
+            homePage.Closed += (s, args) => this.Close();
+            homePage.Show();
+            this.Hide();
+        }
+
+        private void HomeEnter(object sender, MouseEventArgs e)
+        {
+            StartButton.Effect = new System.Windows.Media.Effects.DropShadowEffect()
+            {
+                BlurRadius = 5,
+                ShadowDepth = 3
+            };
+        }
+
+        private void HomeLeave(object sender, MouseEventArgs e)
+        {
+            StartButton.Effect = new System.Windows.Media.Effects.DropShadowEffect()
+            {
+                BlurRadius = 20,
+                ShadowDepth = 7
+            };
+        }
+
+        private void SettingsButton(object sender, MouseButtonEventArgs e)
+        {
+            Settings settings = new Settings();
+            this.Closed += (s, args) => settings.Close();
+            settings.Show();
+        }
+
+        private void SettingEnter(object sender, MouseEventArgs e)
+        {
+            SettingsBtn.Effect = new System.Windows.Media.Effects.DropShadowEffect()
+            {
+                BlurRadius = 5,
+                ShadowDepth = 3
+            };
+        }
+
+        private void SettingLeave(object sender, MouseEventArgs e)
+        {
+            SettingsBtn.Effect = new System.Windows.Media.Effects.DropShadowEffect()
+            {
+                BlurRadius = 20,
+                ShadowDepth = 7
+            };
+        }
+
+        private void LicenceEnter(object sender, MouseButtonEventArgs e)
+        {
+            Licence licence = new Licence();
+            licence.Show();
         }
     }
 }
