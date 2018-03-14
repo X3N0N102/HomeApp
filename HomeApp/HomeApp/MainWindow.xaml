@@ -7,15 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Background="#FF212121" WindowStartupLocation="CenterScreen">
     <Grid Width="800" Height="400">
-        <Image x:Name="house_png" Margin="316,182,316,50" Source="house.png" Stretch="Fill" Width="168" Height="168" MouseLeftButtonUp="Click">
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
         <Label x:Name="label" Content="HomeApp" Margin="208,83,208,0" VerticalAlignment="Top" Height="94" FontFamily="Georgia" FontSize="72" FontWeight="Bold" Background="#00000000" Foreground="#FFE68A00">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
+        <Image x:Name="HomeImg" Margin="316,202,316,30" Source="house.png" Stretch="Fill" Width="168" Height="168" MouseLeftButtonUp="Click">
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
     </Grid>
 </Window>
