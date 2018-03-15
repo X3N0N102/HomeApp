@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -20,6 +21,8 @@ namespace HomeApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        MySqlConnection connection;
+        string connectionString = "SERVER=153.92.210.52;PORT=3306;DATABASE=alexdesign;UID=alex;PASSWORD=abbore16;";
         public MainWindow()
         {
             InitializeComponent();
@@ -53,9 +56,9 @@ namespace HomeApp
 
         private void SettingsButton(object sender, MouseButtonEventArgs e)
         {
-            Settings settings = new Settings();
-            this.Closed += (s, args) => settings.Close();
-            settings.Show();
+            //Settings settings = new Settings();
+            //this.Closed += (s, args) => settings.Close();
+            //settings.Show();
         }
 
         private void SettingEnter(object sender, MouseEventArgs e)
@@ -80,6 +83,26 @@ namespace HomeApp
         {
             Licence licence = new Licence();
             licence.Show();
+        }
+
+        private void usr1Enter(object sender, MouseButtonEventArgs e)
+        {
+            try
+            {
+                connection = new MySqlConnection();
+                connection.ConnectionString = connectionString;
+                connection.Open();
+                MySqlCommand cmd = new MySqlCommand("SELECT * FROM users", connection);
+                MySqlDataReader result = cmd.ExecuteReader();
+                if (result.Read())
+                {
+                    MessageBox.Show(result.GetString(1));
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

@@ -36,3 +36,10 @@ C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\Settings.g
 C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\Settings.baml
 C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\Licence.g.cs
 C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\Licence.baml
+C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\Licence.g.cs
+C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\Settings.g.cs
+C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\Licence.baml
+C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\Settings.baml
+C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\bin\Debug\MySql.Data.dll
+C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\bin\Debug\MySql.Data.xml
+C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\HomeApp.csproj.CopyComplete

@@ -7,12 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Background="#FF212121" WindowStartupLocation="CenterScreen">
     <Grid x:Name="SettingsWheel" Width="800" Height="400">
-        <Label x:Name="label" Content="HomeApp" Margin="208,83,208,0" VerticalAlignment="Top" Height="94" FontFamily="Georgia" FontSize="72" FontWeight="Bold" Background="#00000000" Foreground="#FFE68A00">
+        <Label x:Name="label" Content="HomeApp" Margin="208,40,208,0" VerticalAlignment="Top" Height="94" FontFamily="Georgia" FontSize="72" FontWeight="Bold" Background="#00000000" Foreground="#FFE68A00">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Image x:Name="StartButton" Margin="316,202,316,30" Source="house.png" Stretch="Fill" Width="168" Height="168" MouseLeftButtonUp="HomeButton" MouseEnter="HomeEnter" MouseLeave="HomeLeave">
+        <Image x:Name="StartButton" Margin="316,212,316,20" Source="house.png" Stretch="Fill" Width="168" Height="168" MouseLeftButtonUp="HomeButton" MouseEnter="HomeEnter" MouseLeave="HomeLeave">
             <Image.Effect>
                 <DropShadowEffect/>
             </Image.Effect>
@@ -24,5 +24,6 @@
         </Image>
         <Label x:Name="CreatorLabel" Content="By:ÄlexDesigns" HorizontalAlignment="Left" Height="28" Margin="665,362,0,0" VerticalAlignment="Top" Width="110" FontFamily="Georgia" Foreground="#FFE68A00" FontSize="14"/>
         <Image x:Name="LicenceBtn" Margin="10,360,760,10" Source="Licence.png" Stretch="Fill" Width="30" Height="30" MouseLeftButtonUp="LicenceEnter"/>
+        <Image Margin="208,139,512,181" Source="profile.png" Stretch="Fill" Width="80" Height="80" MouseLeftButtonUp="usr1Enter"/>
     </Grid>
 </Window>

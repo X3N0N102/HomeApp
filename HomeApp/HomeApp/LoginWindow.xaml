@@ -1,0 +1,16 @@
+﻿<Window x:Class="HomeApp.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HomeApp"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="450" Width="800" Background="#FF212121">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="34" Margin="298,78,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="285"/>
+        <TextBox HorizontalAlignment="Left" Height="46" Margin="298,212,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="285"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Height="34" Margin="79,78,0,0" VerticalAlignment="Top" Width="193" Foreground="#FFE68A00" FontSize="22"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Height="46" Margin="79,212,0,0" VerticalAlignment="Top" Width="193" Foreground="#FFE68A00" FontSize="22"/>
+
+    </Grid>
+</Window>
