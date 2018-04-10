@@ -5,12 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HomeApp"
         mc:Ignorable="d"
-        Title="LoginWindow" Height="450" Width="800" Background="#FF212121">
-    <Grid>
-        <TextBox HorizontalAlignment="Left" Height="34" Margin="298,78,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="285"/>
-        <TextBox HorizontalAlignment="Left" Height="46" Margin="298,212,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="285"/>
-        <Label Content="Name:" HorizontalAlignment="Left" Height="34" Margin="79,78,0,0" VerticalAlignment="Top" Width="193" Foreground="#FFE68A00" FontSize="22"/>
-        <Label Content="Password:" HorizontalAlignment="Left" Height="46" Margin="79,212,0,0" VerticalAlignment="Top" Width="193" Foreground="#FFE68A00" FontSize="22"/>
+        Title="LoginWindow" Height="287.428" Width="454.046" Background="#FF212121">
+    <Grid RenderTransformOrigin="0.5,0.5">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="-0.118"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <TextBox HorizontalAlignment="Left" Height="34" Margin="135,49,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="285"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Height="34" Margin="24,49,0,0" VerticalAlignment="Top" Width="106" Foreground="#FFE68A00" FontSize="22"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Height="34" Margin="23,123,0,0" VerticalAlignment="Top" Width="107" Foreground="#FFE68A00" FontSize="22"/>
+        <TextBox HorizontalAlignment="Left" Height="34" Margin="135,123,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="285"/>
 
     </Grid>
 </Window>

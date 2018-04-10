@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data;
 
 namespace HomeApp
 {
@@ -56,9 +57,9 @@ namespace HomeApp
 
         private void SettingsButton(object sender, MouseButtonEventArgs e)
         {
-            //Settings settings = new Settings();
-            //this.Closed += (s, args) => settings.Close();
-            //settings.Show();
+            Settings settings = new Settings();
+            this.Closed += (s, args) => settings.Close();
+            settings.Show();
         }
 
         private void SettingEnter(object sender, MouseEventArgs e)
@@ -92,17 +93,47 @@ namespace HomeApp
                 connection = new MySqlConnection();
                 connection.ConnectionString = connectionString;
                 connection.Open();
-                MySqlCommand cmd = new MySqlCommand("SELECT * FROM users", connection);
+                MySqlCommand cmd = new MySqlCommand("SELECT NAME(*) FROM family", connection);
                 MySqlDataReader result = cmd.ExecuteReader();
-                if (result.Read())
+                while (result.Read())
                 {
-                    MessageBox.Show(result.GetString(1));
+                    //ReadSingleRow((IDataRecord)result);
+                    
+                    /*if (result.GetString(3) != null)
+                    {
+                        MessageBox.Show(result.GetString(3));
+                        return;
+                    }
+                    else
+                    {*/
+                        MessageBox.Show(result.GetString(0));
+                    //}
+                    
+                    //int count = ((int)cmd.ExecuteScalar());
+
+                    //MessageBox.Show(result.GetString(1));
                 }
             }
             catch (MySqlException ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void usr2Enter(object sender, MouseButtonEventArgs e)
+        {
+            LoginWindow loginWindow = new LoginWindow();
+            loginWindow.Show();
+        }
+
+        private void usr3Enter(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void usr4Enter(object sender, MouseButtonEventArgs e)
+        {
+
         }
     }
 }

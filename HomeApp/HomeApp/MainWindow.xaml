@@ -24,6 +24,10 @@
         </Image>
         <Label x:Name="CreatorLabel" Content="By:ÄlexDesigns" HorizontalAlignment="Left" Height="28" Margin="665,362,0,0" VerticalAlignment="Top" Width="110" FontFamily="Georgia" Foreground="#FFE68A00" FontSize="14"/>
         <Image x:Name="LicenceBtn" Margin="10,360,760,10" Source="Licence.png" Stretch="Fill" Width="30" Height="30" MouseLeftButtonUp="LicenceEnter"/>
-        <Image Margin="208,139,512,181" Source="profile.png" Stretch="Fill" Width="80" Height="80" MouseLeftButtonUp="usr1Enter"/>
+        <Image Margin="208,125,512,195" Source="profile.png" Stretch="Fill" Width="80" Height="80" MouseLeftButtonUp="usr1Enter"/>
+        <Label x:Name="usrLabel1" Content="&#xD;&#xA;" HorizontalAlignment="Left" Margin="208,208,0,0" VerticalAlignment="Top" Width="80" Height="21"/>
+        <Image Margin="313,125,407,195" Source="profile.png" Stretch="Fill" Width="80" Height="80" MouseLeftButtonUp="usr2Enter"/>
+        <Image Margin="412,125,308,195" Source="profile.png" Stretch="Fill" Width="80" Height="80" MouseLeftButtonUp="usr3Enter"/>
+        <Image Margin="512,125,208,195" Source="profile.png" Stretch="Fill" Width="80" Height="80" MouseLeftButtonUp="usr4Enter"/>
     </Grid>
 </Window>
