@@ -6,7 +6,12 @@
         xmlns:local="clr-namespace:HomeApp"
         mc:Ignorable="d"
         Title="HomePage" Height="450" Width="800" WindowStartupLocation="CenterScreen">
-    <Grid Background="Red">
-        
+    <Grid Background="#FF212121">
+        <Image x:Name="cabinet" HorizontalAlignment="Left" Height="116" Margin="110,70,0,0" VerticalAlignment="Top" Width="100" Source="Img/cabinet.png"/>
+        <Image Height="116" Margin="346,244,346,0" VerticalAlignment="Top" Source="Img/Refrigerator.png"/>
+        <Image Height="116" Margin="110,244,582,0" VerticalAlignment="Top" Source="Img/pantry.png"/>
+        <Image HorizontalAlignment="Left" Height="116" Margin="346,70,0,0" VerticalAlignment="Top" Width="100" Source="Img/frezeer.png"/>
+        <Image Height="116" Margin="582,244,110,0" VerticalAlignment="Top" Source="Img/cabinet.png"/>
+        <Image Height="116" Margin="582,70,110,0" VerticalAlignment="Top" Source="Img/cabinet.png"/>
     </Grid>
 </Window>

@@ -6,28 +6,24 @@
         xmlns:local="clr-namespace:HomeApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Background="#FF212121" WindowStartupLocation="CenterScreen">
-    <Grid x:Name="SettingsWheel" Width="800" Height="400">
-        <Label x:Name="label" Content="HomeApp" Margin="208,40,208,0" VerticalAlignment="Top" Height="94" FontFamily="Georgia" FontSize="72" FontWeight="Bold" Background="#00000000" Foreground="#FFE68A00">
+    <Grid x:Name="SettingsWheel" Height="400" Margin="0,10,-8,9">
+        <Label x:Name="label" Content="HomeApp" Margin="208,40,196,0" VerticalAlignment="Top" Height="94" FontFamily="Georgia" FontSize="72" FontWeight="Bold" Background="#00000000" Foreground="#FFE68A00">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Image x:Name="StartButton" Margin="316,212,316,20" Source="house.png" Stretch="Fill" Width="168" Height="168" MouseLeftButtonUp="HomeButton" MouseEnter="HomeEnter" MouseLeave="HomeLeave">
+        <Image x:Name="StartButton" Margin="316,180,316,52" Source="Img/house.png" Stretch="Fill" Width="168" Height="168" MouseLeftButtonUp="HomeButton" MouseEnter="HomeEnter" MouseLeave="HomeLeave">
             <Image.Effect>
                 <DropShadowEffect/>
             </Image.Effect>
         </Image>
-        <Image x:Name="SettingsBtn" Margin="735,10,25,350" Source="Settings.png" Stretch="Fill" Width="40" Height="40" MouseLeftButtonUp="SettingsButton" MouseEnter="SettingEnter" MouseLeave="SettingLeave">
+        <Image x:Name="SettingsBtn" Margin="735,10,25,350" Source="Img/Settings.png" Stretch="Fill" Width="40" Height="40" MouseLeftButtonUp="SettingsButton" MouseEnter="SettingEnter" MouseLeave="SettingLeave">
             <Image.Effect>
                 <DropShadowEffect BlurRadius="2" ShadowDepth="3"/>
             </Image.Effect>
         </Image>
         <Label x:Name="CreatorLabel" Content="By:ÄlexDesigns" HorizontalAlignment="Left" Height="28" Margin="665,362,0,0" VerticalAlignment="Top" Width="110" FontFamily="Georgia" Foreground="#FFE68A00" FontSize="14"/>
-        <Image x:Name="LicenceBtn" Margin="10,360,760,10" Source="Licence.png" Stretch="Fill" Width="30" Height="30" MouseLeftButtonUp="LicenceEnter"/>
-        <Image Margin="208,125,512,195" Source="profile.png" Stretch="Fill" Width="80" Height="80" MouseLeftButtonUp="usr1Enter"/>
+        <Image x:Name="LicenceBtn" Margin="10,360,760,10" Source="Img/Licence.png" Stretch="Fill" Width="30" Height="30" MouseLeftButtonUp="LicenceEnter"/>
         <Label x:Name="usrLabel1" Content="&#xD;&#xA;" HorizontalAlignment="Left" Margin="208,208,0,0" VerticalAlignment="Top" Width="80" Height="21"/>
-        <Image Margin="313,125,407,195" Source="profile.png" Stretch="Fill" Width="80" Height="80" MouseLeftButtonUp="usr2Enter"/>
-        <Image Margin="412,125,308,195" Source="profile.png" Stretch="Fill" Width="80" Height="80" MouseLeftButtonUp="usr3Enter"/>
-        <Image Margin="512,125,208,195" Source="profile.png" Stretch="Fill" Width="80" Height="80" MouseLeftButtonUp="usr4Enter"/>
     </Grid>
 </Window>

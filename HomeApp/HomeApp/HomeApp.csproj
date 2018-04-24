@@ -126,16 +126,18 @@
     <Resource Include="Img\house.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="house.png" />
+    <Resource Include="Img\Settings.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Settings.png" />
+    <Resource Include="Img\Licence.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Licence.png" />
+    <Resource Include="Img\frezeer.png" />
+    <Resource Include="Img\pantry.png" />
+    <Resource Include="Img\Refrigerator.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="profile.png" />
+    <Resource Include="Img\cabinet.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

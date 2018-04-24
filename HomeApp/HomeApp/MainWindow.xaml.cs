@@ -119,21 +119,5 @@ namespace HomeApp
                 MessageBox.Show(ex.Message);
             }
         }
-
-        private void usr2Enter(object sender, MouseButtonEventArgs e)
-        {
-            LoginWindow loginWindow = new LoginWindow();
-            loginWindow.Show();
-        }
-
-        private void usr3Enter(object sender, MouseButtonEventArgs e)
-        {
-
-        }
-
-        private void usr4Enter(object sender, MouseButtonEventArgs e)
-        {
-
-        }
     }
 }
