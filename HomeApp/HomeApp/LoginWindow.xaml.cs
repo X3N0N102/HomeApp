@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data;
+using System.Threading;
 
 namespace HomeApp
 {
@@ -22,11 +23,54 @@ namespace HomeApp
     /// </summary>
     public partial class LoginWindow : Window
     {
-        MySqlConnection connection;
-        string connectionString = "SERVER=153.92.210.52;PORT=3306;DATABASE=alexdesign;UID=alex;PASSWORD=abbore16;";
         public LoginWindow()
         {
             InitializeComponent();
+        }
+
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                string name = usrName.Text.Trim().ToLower();
+                string pass = psw.Text.Trim();
+
+                foreach (DataRow row in Main.db.Query("SELECT * FROM users WHERE name='" + name + "'").Rows)
+                {
+                    if (pass == row["password"].ToString())
+                    {
+                        MainWindow.instance.loggedIn = true;
+                        this.Close();
+                        MessageBox.Show("Correct");
+                        foreach (DataRow id_rows in Main.db.Query("SELECT id FROM users WHERE name='" + name + "'").Rows)
+                        {
+                            Main.user = new User(name, int.Parse(id_rows["id"].ToString()));
+                        }
+
+                        return;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect");
+                        return;
+                    }
+                }
+                MessageBox.Show("Username not found!");
+            }
+            catch(Exception _e)
+            {
+                MessageBox.Show(_e.Message);
+            }
+        }
+
+        private void WindowClosing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
+        }
+
+        private void pswKeyUp(object sender, KeyEventArgs e)
+        {
         }
     }
 }

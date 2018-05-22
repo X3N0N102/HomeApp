@@ -45,3 +45,5 @@ C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\bin\Debug\MySql.Data.xml
 C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\HomeApp.csproj.CopyComplete
 C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\LoginWindow.g.cs
 C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\LoginWindow.baml
+C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\CabinetWindow.g.cs
+C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\CabinetWindow.baml

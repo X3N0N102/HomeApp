@@ -25,5 +25,10 @@
         <Label x:Name="CreatorLabel" Content="By:ÄlexDesigns" HorizontalAlignment="Left" Height="28" Margin="665,362,0,0" VerticalAlignment="Top" Width="110" FontFamily="Georgia" Foreground="#FFE68A00" FontSize="14"/>
         <Image x:Name="LicenceBtn" Margin="10,360,760,10" Source="Img/Licence.png" Stretch="Fill" Width="30" Height="30" MouseLeftButtonUp="LicenceEnter"/>
         <Label x:Name="usrLabel1" Content="&#xD;&#xA;" HorizontalAlignment="Left" Margin="208,208,0,0" VerticalAlignment="Top" Width="80" Height="21"/>
+        <Image x:Name="SettingsBtn_Copy" Margin="694,6,65,354" Source="Img/user.png" Stretch="Fill" Height="40" MouseLeftButtonUp="UsrButton" MouseEnter="UsrEnter" MouseLeave="UsrLeave">
+            <Image.Effect>
+                <DropShadowEffect BlurRadius="2" ShadowDepth="3"/>
+            </Image.Effect>
+        </Image>
     </Grid>
 </Window>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HomeApp"
         mc:Ignorable="d"
-        Title="LoginWindow" Height="287.428" Width="454.046" Background="#FF212121">
+        Title="LoginWindow" Height="287.428" Width="454.046" Background="#FF212121" HorizontalAlignment="Center" WindowStartupLocation="CenterScreen" Closing="WindowClosing">
     <Grid RenderTransformOrigin="0.5,0.5">
         <Grid.RenderTransform>
             <TransformGroup>
@@ -15,10 +15,11 @@
                 <TranslateTransform/>
             </TransformGroup>
         </Grid.RenderTransform>
-        <TextBox HorizontalAlignment="Left" Height="34" Margin="135,49,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="285"/>
-        <Label Content="Name:" HorizontalAlignment="Left" Height="34" Margin="24,49,0,0" VerticalAlignment="Top" Width="106" Foreground="#FFE68A00" FontSize="22"/>
+        <TextBox x:Name="usrName" HorizontalAlignment="Left" Height="34" Margin="135,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="285" VerticalContentAlignment="Center"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Height="34" Margin="57,49,0,0" VerticalAlignment="Top" Width="73" Foreground="#FFE68A00" FontSize="22"/>
         <Label Content="Password:" HorizontalAlignment="Left" Height="34" Margin="23,123,0,0" VerticalAlignment="Top" Width="107" Foreground="#FFE68A00" FontSize="22"/>
-        <TextBox HorizontalAlignment="Left" Height="34" Margin="135,123,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="285"/>
+        <TextBox x:Name="psw" HorizontalAlignment="Left" Height="34" Margin="135,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="285" VerticalContentAlignment="Center" KeyUp="pswKeyUp"/>
+        <Button x:Name="loginBtn" Content="Login" Height="32" Margin="145,195,146,0" VerticalAlignment="Top" Click="Button_Click"/>
 
     </Grid>
 </Window>

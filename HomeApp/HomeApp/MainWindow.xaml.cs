@@ -22,19 +22,37 @@ namespace HomeApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        MySqlConnection connection;
-        string connectionString = "SERVER=153.92.210.52;PORT=3306;DATABASE=alexdesign;UID=alex;PASSWORD=abbore16;";
+        public bool loggedIn;
+        public static MainWindow instance;
+
         public MainWindow()
         {
             InitializeComponent();
+            instance = this;
+            try
+            {
+                Main.Init();
+
+            }catch(Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
 
         private void HomeButton(object sender, MouseButtonEventArgs e)
         {
-            HomePage homePage = new HomePage();
-            homePage.Closed += (s, args) => this.Close();
-            homePage.Show();
-            this.Hide();
+            if (loggedIn)
+            {
+                HomePage homePage = new HomePage(1);
+                homePage.Closed += (s, args) => this.Close();
+                homePage.Show();
+                this.Hide();
+            }else
+            {
+                LoginWindow login = new LoginWindow();
+                this.Closed += (s, args) => login.Close();
+                login.Show();
+            }
         }
 
         private void HomeEnter(object sender, MouseEventArgs e)
@@ -88,35 +106,30 @@ namespace HomeApp
 
         private void usr1Enter(object sender, MouseButtonEventArgs e)
         {
-            try
-            {
-                connection = new MySqlConnection();
-                connection.ConnectionString = connectionString;
-                connection.Open();
-                MySqlCommand cmd = new MySqlCommand("SELECT NAME(*) FROM family", connection);
-                MySqlDataReader result = cmd.ExecuteReader();
-                while (result.Read())
-                {
-                    //ReadSingleRow((IDataRecord)result);
-                    
-                    /*if (result.GetString(3) != null)
-                    {
-                        MessageBox.Show(result.GetString(3));
-                        return;
-                    }
-                    else
-                    {*/
-                        MessageBox.Show(result.GetString(0));
-                    //}
-                    
-                    //int count = ((int)cmd.ExecuteScalar());
+           
+        }
 
-                    //MessageBox.Show(result.GetString(1));
-                }
-            }
-            catch (MySqlException ex)
+        private void UsrEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void UsrLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void UsrButton(object sender, MouseButtonEventArgs e)
+        {
+            if (!loggedIn)
             {
-                MessageBox.Show(ex.Message);
+                LoginWindow login = new LoginWindow();
+                this.Closed += (s, args) => login.Close();
+                login.Show();
+            }
+            else
+            {
+                MessageBox.Show("You're already logged in!");
             }
         }
     }

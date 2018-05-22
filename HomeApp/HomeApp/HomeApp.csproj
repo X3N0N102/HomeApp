@@ -55,15 +55,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CabinetWindow.xaml.cs">
+      <DependentUpon>CabinetWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Database.cs" />
     <Compile Include="Licence.xaml.cs">
       <DependentUpon>Licence.xaml</DependentUpon>
     </Compile>
     <Compile Include="LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Main.cs" />
     <Compile Include="Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
+    <Compile Include="User.cs" />
+    <Page Include="CabinetWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="HomePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -138,6 +148,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Img\cabinet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

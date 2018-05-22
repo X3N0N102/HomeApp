@@ -16,27 +16,32 @@ using System.Windows.Shapes;
 namespace HomeApp
 {
     /// <summary>
-    /// Interaction logic for HomePage.xaml
+    /// Interaction logic for CabinetWindow.xaml
     /// </summary>
-    public partial class HomePage : Window
+    public partial class CabinetWindow : Window
     {
         
-        public HomePage(int userId)
+        public CabinetWindow()
         {
             InitializeComponent();
-            GetCabinets(userId);
+            GetStuff("fridge");
 
         }
 
-        private void GetCabinets(int userId)
+        private void GetStuff(string cabinetName)
         {
 
             try
             {
-
-                foreach (DataRow row in Main.db.Query("SELECT * FROM cabinet WHERE ID='" + Main.user.ID + "' ").Rows)
+                MessageBox.Show(Main.user.Cabinets[cabinetName].stuffs.Count.ToString());
+                foreach (var c in Main.user.Cabinets[cabinetName].stuffs)
                 {
-                    string cabinetType = row["type"].ToString();
+                    string stuffname = c.Key;
+                    string sustainability = c.Value;
+                    MessageBox.Show(stuffname + " - " + sustainability);
+
+                    stuffList.Items.Add(stuffname);
+
                 }
             }
             catch (Exception _e)
@@ -46,12 +51,5 @@ namespace HomeApp
 
         }
 
-        private void cabinetEnter(object sender, MouseButtonEventArgs e)
-        {
-            CabinetWindow cabinet = new CabinetWindow();
-            cabinet.Closed += (s, args) => this.Close();
-            cabinet.Show();
-            this.Hide();
-        }
     }
 }
