@@ -24,32 +24,32 @@ namespace HomeApp
         public CabinetWindow()
         {
             InitializeComponent();
-            GetStuff("fridge");
+
+            UpdateStuffs();
 
         }
 
-        private void GetStuff(string cabinetName)
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
+            Main.db.Query($"INSERT INTO stuff (Name, Sustainability, cabinetID) VALUES ('{addStuffName.Text}', '{addSustDate.Text}', {Main.user.ID})");
 
-            try
-            {
-                MessageBox.Show(Main.user.Cabinets[cabinetName].stuffs.Count.ToString());
-                foreach (var c in Main.user.Cabinets[cabinetName].stuffs)
-                {
-                    string stuffname = c.Key;
-                    string sustainability = c.Value;
-                    MessageBox.Show(stuffname + " - " + sustainability);
-
-                    stuffList.Items.Add(stuffname);
-
-                }
-            }
-            catch (Exception _e)
-            {
-                MessageBox.Show(_e.Message);
-            }
-
+            await UpdateStuffs();
         }
 
+        private async Task UpdateStuffs()
+        {
+            Main.user.UpdateInformation();
+            stuffList.Items.Clear();
+            foreach (var t in Main.user.GetStuff("cabinet"))
+            {
+                await Task.Run(() =>
+                {
+                    stuffList.Dispatcher.Invoke(() =>
+                    {
+                        stuffList.Items.Add(t.Key);
+                    });
+                });
+            }
+        }
     }
 }

@@ -18,7 +18,6 @@ C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\HomePage.b
 C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\bin\Debug\HomeApp.exe.config
 C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\bin\Debug\HomeApp.exe
 C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\bin\Debug\HomeApp.pdb
-C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\HomeApp.csprojResolveAssemblyReference.cache
 C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\HomePage.g.cs
 C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\MainWindow.g.cs
 C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\App.g.cs
@@ -47,3 +46,6 @@ C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\LoginWindow.g.c
 C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\LoginWindow.baml
 C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\CabinetWindow.g.cs
 C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\CabinetWindow.baml
+C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\HomeApp.csprojAssemblyReference.cache
+C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\Fridge.g.cs
+C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\Fridge.baml

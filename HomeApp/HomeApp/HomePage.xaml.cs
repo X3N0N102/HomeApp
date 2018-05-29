@@ -53,5 +53,13 @@ namespace HomeApp
             cabinet.Show();
             this.Hide();
         }
+
+        private void fridgeEnter(object sender, MouseButtonEventArgs e)
+        {
+            Fridge fridge = new Fridge();
+            fridge.Closed += (s, args) => this.Close();
+            fridge.Show();
+            this.Hide();
+        }
     }
 }

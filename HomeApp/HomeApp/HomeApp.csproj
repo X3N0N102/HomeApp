@@ -59,6 +59,9 @@
       <DependentUpon>CabinetWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Database.cs" />
+    <Compile Include="Fridge.xaml.cs">
+      <DependentUpon>Fridge.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Licence.xaml.cs">
       <DependentUpon>Licence.xaml</DependentUpon>
     </Compile>
@@ -71,6 +74,10 @@
     </Compile>
     <Compile Include="User.cs" />
     <Page Include="CabinetWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fridge.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

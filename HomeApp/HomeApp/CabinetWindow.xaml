@@ -1,4 +1,5 @@
-﻿<Window x:Class="HomeApp.CabinetWindow"
+﻿
+    <Window x:Class="HomeApp.CabinetWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -8,5 +9,10 @@
         Title="CabinetWindow" Height="450" Width="800">
     <Grid>
         <ListBox x:Name="stuffList" HorizontalAlignment="Left" Height="336" Margin="55,37,0,0" VerticalAlignment="Top" Width="295"/>
+        <Button Content="Lägg till" HorizontalAlignment="Left" Margin="661,352,0,0" VerticalAlignment="Top" Width="121" Height="57" Click="Button_Click"/>
+        <TextBox x:Name="addStuffName" HorizontalAlignment="Left" Height="34" Margin="568,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="204"/>
+        <DatePicker x:Name="addSustDate" HorizontalAlignment="Left" Margin="568,262,0,0" VerticalAlignment="Top" Height="34" Width="204" FirstDayOfWeek="Monday" Text="aqwedas"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="511,212,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sustainability:" HorizontalAlignment="Left" Margin="473,261,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

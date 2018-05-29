@@ -21,7 +21,6 @@ namespace HomeApp
                 try
                 {
                     db = new Database("153.92.210.52", "alexdesign", "alex", "abbore16");
-                    MessageBox.Show("Connected!");
                 }
                 catch (Exception e)
                 {

@@ -13,23 +13,17 @@ namespace HomeApp
     {
         private MySqlConnection db_conn;
         private static MySqlCommand db_command;
-        private bool connected;
 
         public Database(string server_ip, string database_name, string username, string password)
         {
             try
             {
-                string connectionString = " SERVER=" + server_ip +
-                                            ";PORT=3306" +
-                                            ";DATABASE=" + database_name +
-                                            ";UID=" + username +
-                                            ";PASSWORD=" + password + ";";
+                string connectionString = $"SERVER={server_ip};PORT=3306;DATABASE={database_name};UID={username};PASSWORD={password};";
 
                 db_conn = new MySqlConnection();
                 db_conn.ConnectionString = connectionString;
                 db_command = db_conn.CreateCommand();
                 db_conn.Open();
-                connected = true;
             }catch(Exception e)
             {
                 MessageBox.Show(e.Message);

@@ -39,7 +39,7 @@ namespace HomeApp
             }
         }
 
-        private void HomeButton(object sender, MouseButtonEventArgs e)
+        public void HomeButton(object sender, MouseButtonEventArgs e)
         {
             if (loggedIn)
             {

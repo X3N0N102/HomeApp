@@ -28,7 +28,6 @@ namespace HomeApp
             InitializeComponent();
         }
 
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -36,7 +35,7 @@ namespace HomeApp
                 string name = usrName.Text.Trim().ToLower();
                 string pass = psw.Text.Trim();
 
-                foreach (DataRow row in Main.db.Query("SELECT * FROM users WHERE name='" + name + "'").Rows)
+                foreach (DataRow row in Main.db.Query($"SELECT * FROM users WHERE name='{name}'").Rows)
                 {
                     if (pass == row["password"].ToString())
                     {
