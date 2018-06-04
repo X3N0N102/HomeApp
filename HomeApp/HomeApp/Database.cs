@@ -11,9 +11,11 @@ namespace HomeApp
 {
     public class Database
     {
+        //initierar variabler
         private MySqlConnection db_conn;
         private static MySqlCommand db_command;
 
+        //skapar en koppling med databasen
         public Database(string server_ip, string database_name, string username, string password)
         {
             try
@@ -30,6 +32,7 @@ namespace HomeApp
             }
         }
 
+        //En metod för att fråga efter saker
         public DataTable Query(string query)
         {
             DataTable results = new DataTable();

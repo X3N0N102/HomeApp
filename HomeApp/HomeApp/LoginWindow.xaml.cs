@@ -32,11 +32,13 @@ namespace HomeApp
         {
             try
             {
+                //Sätter variabler name och pass som sparar inloggningsuppgifterna
                 string name = usrName.Text.Trim().ToLower();
                 string pass = psw.Text.Trim();
-
+                //kollar igenom users i databasen och kollar om användernamnet och lösenordet matchar med något av dem
                 foreach (DataRow row in Main.db.Query($"SELECT * FROM users WHERE name='{name}'").Rows)
                 {
+                    //om lösenordet är rätt loggas du in
                     if (pass == row["password"].ToString())
                     {
                         MainWindow.instance.loggedIn = true;
@@ -51,10 +53,12 @@ namespace HomeApp
                     }
                     else
                     {
+                        //annars får du ett felmedelande som säger incorrect
                         MessageBox.Show("Incorrect");
                         return;
                     }
                 }
+                //om användernamnet är fel så berättar den det
                 MessageBox.Show("Username not found!");
             }
             catch(Exception _e)

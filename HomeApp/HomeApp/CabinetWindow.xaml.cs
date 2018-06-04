@@ -28,7 +28,7 @@ namespace HomeApp
             UpdateStuffs();
 
         }
-
+        //Gör att man lägger till sakerna som skrivs i name och sust textbaren i databasen
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
             Main.db.Query($"INSERT INTO stuff (Name, Sustainability, cabinetID) VALUES ('{addStuffName.Text}', '{addSustDate.Text}', {Main.user.ID})");
@@ -36,20 +36,23 @@ namespace HomeApp
             await UpdateStuffs();
         }
 
-        private async Task UpdateStuffs()
+        //Uppdaterar listan som finns i cabinet när nya saker tillkommer
+        private async Task<string> UpdateStuffs()
         {
             Main.user.UpdateInformation();
             stuffList.Items.Clear();
             foreach (var t in Main.user.GetStuff("cabinet"))
             {
-                await Task.Run(() =>
+                await Task<string>.Run(() =>
                 {
                     stuffList.Dispatcher.Invoke(() =>
                     {
                         stuffList.Items.Add(t.Key);
                     });
+                    return t.Key;
                 });
             }
+            return null;
         }
     }
 }

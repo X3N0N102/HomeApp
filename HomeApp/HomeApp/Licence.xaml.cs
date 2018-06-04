@@ -23,10 +23,5 @@ namespace HomeApp
         {
             InitializeComponent();
         }
-
-        private void listView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
     }
 }

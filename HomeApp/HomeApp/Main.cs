@@ -12,7 +12,7 @@ namespace HomeApp
     {
         public static Database db;
         public static User user;
-
+        public static List<User> family;
 
         public static void Init()
         {
@@ -20,6 +20,7 @@ namespace HomeApp
             {
                 try
                 {
+                    //Lägger till databasen
                     db = new Database("153.92.210.52", "alexdesign", "alex", "abbore16");
                 }
                 catch (Exception e)

@@ -28,6 +28,7 @@ namespace HomeApp
 
         }
 
+        //Hämtar lådorna från databasen som tillhör den användaren som är inloggad
         private void GetCabinets(int userId)
         {
 
@@ -45,7 +46,7 @@ namespace HomeApp
             }
 
         }
-
+        //Öppnar en ny sida som visar vad som finns i lådan man väljer
         private void cabinetEnter(object sender, MouseButtonEventArgs e)
         {
             CabinetWindow cabinet = new CabinetWindow();

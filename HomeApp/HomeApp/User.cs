@@ -8,17 +8,18 @@ using System.Windows;
 
 namespace HomeApp
 {
-    public class _
+    //in klass med id
+    public class IdClass
     {
         protected int id;
 
-        public _(int id)
+        public IdClass(int id)
         {
             this.id = id;
         }
     }
 
-    public class CabinetStuffs : _
+    public class CabinetStuffs : IdClass
     {
         public Dictionary<string, string> stuffs;
 
@@ -36,15 +37,16 @@ namespace HomeApp
         }
     }
 
-    public class User: _
+
+    public class User : IdClass
     {
 
         string name;
-        Dictionary<string, CabinetStuffs> cabinets;
-
-        public Dictionary<string, CabinetStuffs> Cabinets { get => cabinets; set => cabinets = value; }
+        public Dictionary<string, CabinetStuffs> Cabinets { get; set; }
+        
         public int ID { get => id; set => id = value; }
 
+        //lägger till en anändare
         public User(string name, int id) : base(id)
         {
             this.name = name;
@@ -52,6 +54,7 @@ namespace HomeApp
             UpdateInformation();
         }
 
+        //Den uppdaterar vilka saker som fins vart
         public void UpdateInformation()
         {
             foreach (DataRow cab_row in Main.db.Query($"SELECT * FROM cabinet WHERE usrID='{this.id}'").Rows)
@@ -69,6 +72,7 @@ namespace HomeApp
 
         }
 
+        //Den hämtar saker från saker från de olika lådorna
         public Dictionary<string, string> GetStuff(string cabinetName)
         {
             try

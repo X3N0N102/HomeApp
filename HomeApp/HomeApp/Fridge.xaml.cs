@@ -22,7 +22,7 @@ namespace HomeApp
         public Fridge()
         {
             InitializeComponent();
-
+            //lägger till alla saker från databasen som tillhör användaren och fidge i listan
             foreach (var t in Main.user.GetStuff("fridge"))
             {
                 stuffList.Items.Add(t.Key);

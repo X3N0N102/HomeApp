@@ -31,6 +31,7 @@ namespace HomeApp
             instance = this;
             try
             {
+                //initierar main
                 Main.Init();
 
             }catch(Exception e)
@@ -38,7 +39,7 @@ namespace HomeApp
                 MessageBox.Show(e.Message);
             }
         }
-
+        //gör så att du kommer till hompage om du är inloggad annars blir du skickad vidare till login sidan
         public void HomeButton(object sender, MouseButtonEventArgs e)
         {
             if (loggedIn)
@@ -54,7 +55,7 @@ namespace HomeApp
                 login.Show();
             }
         }
-
+        //lägger till knappar med efecter
         private void HomeEnter(object sender, MouseEventArgs e)
         {
             StartButton.Effect = new System.Windows.Media.Effects.DropShadowEffect()
@@ -72,7 +73,7 @@ namespace HomeApp
                 ShadowDepth = 7
             };
         }
-
+        //öppnar settnigs sidan
         private void SettingsButton(object sender, MouseButtonEventArgs e)
         {
             Settings settings = new Settings();
@@ -97,7 +98,7 @@ namespace HomeApp
                 ShadowDepth = 7
             };
         }
-
+        //öppnar licens sidan
         private void LicenceEnter(object sender, MouseButtonEventArgs e)
         {
             Licence licence = new Licence();
@@ -118,7 +119,7 @@ namespace HomeApp
         {
 
         }
-
+        //öppnar loggin sidan ifall du inte är inloggad annars säger den bara att du redan är inloggad
         private void UsrButton(object sender, MouseButtonEventArgs e)
         {
             if (!loggedIn)
