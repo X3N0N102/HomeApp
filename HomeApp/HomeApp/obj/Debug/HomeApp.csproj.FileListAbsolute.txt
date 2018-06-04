@@ -49,3 +49,11 @@ C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\CabinetWindow.b
 C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\HomeApp.csprojAssemblyReference.cache
 C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\Fridge.g.cs
 C:\Users\elev\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\Fridge.baml
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\bin\Debug\MySql.Data.xml
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\CabinetWindow.g.cs
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\Fridge.g.cs
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\LoginWindow.g.cs
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\CabinetWindow.baml
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\Fridge.baml
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\LoginWindow.baml
+C:\Users\Alexander\Documents\GitHub\HomeApp\HomeApp\HomeApp\obj\Debug\HomeApp.csproj.CopyComplete
