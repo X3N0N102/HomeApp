@@ -19,20 +19,20 @@ namespace HomeApp
         }
     }
 
-    public class CabinetStuffs : IdClass
+    public class CabinetStuffs : IdClass, IType
     {
-        public Dictionary<string, string> stuffs;
+        public Dictionary<string, string> Stuffs { get; set; }
 
         public CabinetStuffs(int id) : base(id)
         {
-            this.stuffs = new Dictionary<string, string>();
+            this.Stuffs = new Dictionary<string, string>();
         }
 
         public void Add(string key, string value)
         {
-            if (!this.stuffs.ContainsKey(key))
+            if (!this.Stuffs.ContainsKey(key))
             {
-                this.stuffs[key] = value;
+                this.Stuffs[key] = value;
             }
         }
     }
@@ -79,7 +79,7 @@ namespace HomeApp
             {
                 Dictionary<string, string> retList = new Dictionary<string, string>();
 
-                foreach (var c in this.Cabinets[cabinetName].stuffs)
+                foreach (var c in this.Cabinets[cabinetName].Stuffs)
                 {
                     string stuffname = c.Key;
                     string sustainability = c.Value;

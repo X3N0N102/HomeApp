@@ -62,6 +62,7 @@
     <Compile Include="Fridge.xaml.cs">
       <DependentUpon>Fridge.xaml</DependentUpon>
     </Compile>
+    <Compile Include="IType.cs" />
     <Compile Include="Licence.xaml.cs">
       <DependentUpon>Licence.xaml</DependentUpon>
     </Compile>
