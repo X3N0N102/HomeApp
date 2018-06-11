@@ -133,5 +133,10 @@ namespace HomeApp
                 MessageBox.Show("You're already logged in!");
             }
         }
+
+        private void EnterNTI(object sender, MouseButtonEventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.ntigymnasiet.se/sodertalje/");
+        }
     }
 }

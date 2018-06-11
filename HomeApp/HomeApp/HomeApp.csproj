@@ -160,5 +160,8 @@
   <ItemGroup>
     <Resource Include="Img\user.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\nti-logo-arrow-transparent-white.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
