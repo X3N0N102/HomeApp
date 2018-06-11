@@ -7,11 +7,9 @@
         mc:Ignorable="d"
         Title="HomePage" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid Background="#FF212121">
-        <Image x:Name="cabinet" HorizontalAlignment="Left" Height="116" Margin="110,70,0,0" VerticalAlignment="Top" Width="100" Source="Img/cabinet.png" MouseLeftButtonUp="cabinetEnter"/>
-        <Image Height="116" Margin="346,244,346,0" VerticalAlignment="Top" Source="Img/Refrigerator.png"/>
-        <Image Height="116" Margin="110,244,582,0" VerticalAlignment="Top" Source="Img/pantry.png" MouseLeftButtonUp="fridgeEnter"/>
-        <Image HorizontalAlignment="Left" Height="116" Margin="346,70,0,0" VerticalAlignment="Top" Width="100" Source="Img/frezeer.png"/>
-        <Image Height="116" Margin="582,244,110,0" VerticalAlignment="Top" Source="Img/cabinet.png"/>
-        <Image Height="116" Margin="582,70,110,0" VerticalAlignment="Top" Source="Img/cabinet.png"/>
+        <Image x:Name="cabinet" HorizontalAlignment="Left" Height="116" Margin="200,70,0,0" VerticalAlignment="Top" Width="100" Source="Img/cabinet.png" MouseLeftButtonUp="cabinetEnter"/>
+        <Image Height="116" Margin="491,244,200.6,0" VerticalAlignment="Top" Source="Img/Refrigerator.png"/>
+        <Image Height="116" Margin="200,244,491.6,0" VerticalAlignment="Top" Source="Img/pantry.png" MouseLeftButtonUp="fridgeEnter"/>
+        <Image Height="116" Margin="493,70,200.6,0" VerticalAlignment="Top" Source="Img/frezeer.png"/>
     </Grid>
 </Window>
