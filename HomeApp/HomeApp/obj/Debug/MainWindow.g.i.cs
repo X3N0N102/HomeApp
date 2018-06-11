@@ -104,6 +104,14 @@ namespace HomeApp {
         #line default
         #line hidden
         
+        
+        #line 33 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Image image;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -217,6 +225,9 @@ namespace HomeApp {
             
             #line default
             #line hidden
+            return;
+            case 9:
+            this.image = ((System.Windows.Controls.Image)(target));
             return;
             }
             this._contentLoaded = true;
